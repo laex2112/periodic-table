@@ -1,38 +1,38 @@
 {
-  "name": "react-table",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "",
-  "main": "./main.js",
-  "dependencies": {
-    "gh-pages": "^2.0.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-github-btn": "^1.2.1",
-    "react-scripts": "^5.0.1"
-  },
-  "scripts": {
-    "start": "concurrently \"npm run electron-start\" \"npm run react-start\"",
-    "electron-start": "electron .",
-    "react-start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "@electron/packager": "^18.3.2",
-    "concurrently": "^8.2.2",
-    "electron": "^30.0.1"
-  }
+    "name": "react-table",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "",
+    "main": "./main.js",
+    "dependencies": {
+        "gh-pages": "^2.0.1",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0",
+        "react-github-btn": "^1.2.1",
+        "react-scripts": "^5.0.1"
+    },
+    "scripts": {
+        "start": "concurrently \"npm run electron-start\" \"npm run react-start\"",
+        "electron-start": "electron .",
+        "react-start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "predeploy": "yarn run build",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ],
+    "devDependencies": {
+        "@electron/packager": "^18.3.2",
+        "concurrently": "^8.2.2",
+        "electron": "^30.0.1"
+    }
 }
