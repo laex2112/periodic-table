@@ -3,6 +3,7 @@
 // Modules to control application life and create native browser window
 const { app, BrowserWindow } = require("electron")
 const path = require("node:path")
+require('@electron/remote/main').initialize()
 
 const createWindow = () => {
     // Create the browser window.
@@ -13,6 +14,7 @@ const createWindow = () => {
         icon: __dirname + "/assets/app.ico",
         resizable: false,
         webPreferences: {
+            enableRemoteModule: true,
             preload: path.join(__dirname, "preload.js"),
         },
         // titleBarStyle: 'hidden',
@@ -23,7 +25,16 @@ const createWindow = () => {
         // }
     })
 
+
+    // electron-is-dev
+    // mainWindow.loadURL(
+    //     isDev
+    //     ? "http://localhost:3000"
+    //     : `file://${path.join(__dirname, '../build/index.html')}`
+    // )
+
     mainWindow.loadURL("http://localhost:3000")
+       
 
     mainWindow.setMenuBarVisibility(false)
 
